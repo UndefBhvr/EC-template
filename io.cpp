@@ -65,7 +65,7 @@ void write(char* str)
 }
 
 template<typename T,typename... Args>
-void write(T& x,Args&... args)
+void write(T x,Args... args)
 {
     write(x);
     write(args...);
