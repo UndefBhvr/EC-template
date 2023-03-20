@@ -38,7 +38,7 @@ void read(char *str)
     while (isblank(c))
         c = gc();
     while (!isblank(c))
-        *str++ = c = gc();
+        *str++ = c, c = gc();
 }
 
 template <typename T, typename... Args>
